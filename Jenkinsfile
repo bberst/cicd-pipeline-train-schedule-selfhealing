@@ -35,6 +35,7 @@ pipeline {
                         app.push("latest")
                     }
                 }
+                echo "${env.BUILD_NUMBER}"
             }
         }
         stage('DeployToProduction') {
